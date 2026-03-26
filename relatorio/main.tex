@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+
+% --------------------
+% PACOTES
+% --------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\geometry{margin=2.5cm}
+
+% --------------------
+% COMANDOS
+% --------------------
+\newcommand{\ema}{Estações Meteorológicas Automáticas}
+\newcommand{\mqtt}{MQTT}
+\newcommand{\api}{API}
+
+% --------------------
+% DOCUMENTO
+% --------------------
+\title{Relatório Técnico \\ Sistema de \ema}
+\author{Henry Campos}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+% --------------------
+\section{Introdução}
+
+Este relatório apresenta o desenvolvimento do sistema de \ema\ para monitoramento climático urbano.
+
+% --------------------
+\section{Arquitetura do Sistema}
+
+O sistema é composto por três camadas principais:
+
+\begin{itemize}
+    \item Coleta de dados (estações)
+    \item Backend (processamento e armazenamento)
+    \item Clientes (visualização)
+\end{itemize}
+
+% --------------------
+\section{Implementação}
+
+A comunicação foi realizada utilizando o protocolo \mqtt, com backend baseado em serviços web.
+
+% --------------------
+\section{Resultados}
+
+Os dados coletados permitiram visualizar variações climáticas locais em tempo real.
+
+% --------------------
+\section{Conclusão}
+
+O sistema demonstrou viabilidade para aplicação em monitoramento urbano.
+
+% --------------------
+\bibliographystyle{plain}
+\bibliography{referencias}
+
+\end{document}
